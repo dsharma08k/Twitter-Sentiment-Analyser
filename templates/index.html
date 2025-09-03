@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Sentiment Classifier</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1>Classify Tweet Sentiment</h1>
+            <p>Enter a tweet below to check whether it's <strong>Positive</strong> or <strong>Negative</strong></p>
+        </header>
+        
+        <!-- Input Section -->
+        <div class="input-box">
+            <textarea id="tweet-input" placeholder="Type your tweet here..."></textarea>
+            <button id="classify-button">Classify</button>
+        </div>
+        
+        <!-- Result Section -->
+        <div id="result" class="hidden">
+            <p id="sentiment"></p>
+            <span id="emoji"></span>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
